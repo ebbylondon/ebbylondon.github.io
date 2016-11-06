@@ -1,0 +1,103 @@
+body {
+		background-image: url(../images/bg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		/*background-color: rgb(153, 120, 147);*/
+		/*google color picker then it will give you the code for CSS*/
+		font-family: Helvetica, Arial, sans-serif;
+		/*the font types here is in order.  if the computer has Helvetica, then use Helvetica and 
+		so on and so forth*/
+	}
+
+	.main {
+		background-color: rgba(200, 200, 200, 0.7); 
+		max-width: 600px;
+		/*why need to add "max" because the webpage can adjust it if the screen goes down below 600px, e.g. mobile
+		if just type "width", it won't adjust page to fit the screen size. normally mobile size is less than 600px*/
+		margin: 0 auto;
+		padding: 20px;
+		border-radius: 40px;
+		box-shadow: 10px 10px 10px 5px grey; 
+		/*X Y blur size color*/
+	}
+	/*.main can be named up to you.  but should echo the name in HTML so they system know it refers to the <div>*/
+
+	h1 {
+		text-shadow: 0 0 10px rgb(142, 103, 147); 
+		color: #4c5a70;
+		font-family: 'Source Sans Pro', sans-serif;
+		text-align: center;
+		font-size: 50px; 
+		transition: transform 0.5s;	
+		/*e.g. transform: rotate(20deg); */
+	}
+	
+
+	h2{
+		text-align: center;
+		text-transform: uppercase; 
+		letter-spacing: 5px; 
+		font-weight: normal; 
+		font-family: 'Itim', cursive;
+		
+	}
+
+h3 {
+	margin-bottom: 0;
+}
+
+h3:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+h3 + * {
+	display: none;
+}
+/*it tells the system not to display the paragraph until users hove over it*/
+/* "+" means after; "*" means element on teh webpage */
+
+img {
+		border: 10px solid grey;
+		border-radius: 50%; 
+		/*example border-radius: 40px or border: 10px solid white, etc. */
+		padding: 20px;
+		margin: 0 auto;
+		/*margin: 10px 50px; --> top bottom, left right*/
+		/*margin: 10px 30px 50px--> top, left right, bottom*/
+		display: block;
+		background-color: white;
+		/*margin: 0 auto = to create zero margin and equal margin on each side of image*/
+		transition: transform 30s;
+	}
+
+
+img:hover {
+		transform: rotate(180deg) scale(1.2);
+	}
+	
+
+	p, 
+	ol, 
+	ul {
+		line-height: 1.6; 
+		/*line-height means character height*/
+		list-style: none;
+		/*e.g. list-style: greek*/
+		padding-left: 0; 
+
+	}
+
+	a{
+		text-decoration: none; 
+		/*text-decoration: line-through*/
+		font-weight: bold; 
+		color: rgb(192, 32, 38); 
+	}
+	a:hover {
+		text-decoration: underline;
+		color: rgb(96, 16, 19);
+	}
+
+
